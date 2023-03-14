@@ -1,0 +1,44 @@
+@import '../../styles/colors/styles.css';
+
+
+.circle{
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle[data-lines="true"]::before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 110%;
+    background-color: var(--dark-purple);
+}
+
+.circle[data-after="--light-green"]::after{
+    content: '';
+    position: absolute;
+    background-color: var(--light-green);
+    inset: 2px;
+    border-radius: 50%;
+}
+
+.circle[data-after="--dark-green"]::after{
+    content: '';
+    position: absolute;
+    background-color: var(--dark-green);
+    inset: 2px;
+    border-radius: 50%;
+}
+
+.circle[data-after="--medium-green"]::after{
+    content: '';
+    position: absolute;
+    background-color: var(--dark-green);
+    inset: 2px;
+    border-radius: 50%;
+}
