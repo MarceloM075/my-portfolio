@@ -1,4 +1,5 @@
 import React from 'react'
+import COLORS from '../../styles/colors/colors'
 import './styles.css'
 
 
@@ -7,10 +8,23 @@ function Circle(props){
         height: `max(${props.size})`,
         backgroundColor: `var(${props.color})`
     }
-    console.log(props)
+
+    function isBackgroundTransparent(){
+        if(props.color === COLORS.transparent){
+            return props['data-after']
+        }else{
+            return props.color
+        }
+    }
 
     return (
-        <div className='circle' style={ styles } data-lines={props['data-lines']} data-after={ props['data-lines'] ? props.color : ''}></div>
+        <div 
+            className='circle' 
+            style={ styles } 
+            data-orientation={ props['data-orientation'] } 
+            data-after={ isBackgroundTransparent() }
+        >
+        </div>
     )
 }
 
