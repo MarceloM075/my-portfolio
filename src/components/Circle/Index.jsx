@@ -5,8 +5,8 @@ import './styles.css'
 
 function Circle(props){
     const styles = {
-        height: `max(${props.size})`,
-        backgroundColor: `var(${props.color})`
+        height: `max(${ props.size })`,
+        backgroundColor: `var(${ props.color })`
     }
 
     function isBackgroundTransparent(){
@@ -23,6 +23,7 @@ function Circle(props){
             style={ styles } 
             data-orientation={ props['data-orientation'] } 
             data-after={ isBackgroundTransparent() }
+            data-animation={ props['data-animation'] }
         >
         </div>
     )
