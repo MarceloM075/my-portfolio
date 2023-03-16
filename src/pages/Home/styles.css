@@ -1,0 +1,26 @@
+@import '../../styles/fonts/fonts.css';
+
+.wrapper-home{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr auto;
+    overflow-y: hidden;
+    margin-top: 20vh;
+    gap: 100px;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+a{
+    color: var(--light-purple);
+    font-size: 3rem;
+    text-decoration: none;
+    font-family: var(--font-main);
+}
