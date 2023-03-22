@@ -1,0 +1,114 @@
+/* ------------- not-HOME MENU ------------- */
+
+.menu{
+    background-color: var(--dark-purple);
+    padding: 1rem 2rem;
+    font-family: var(--font-alternative);
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    font-size: inherit;
+}
+
+.menu ul li{
+    font-size: inherit;
+}
+
+.nav-itens{
+    color: var(--medium-green);
+    text-decoration: none;
+    font-size: inherit;
+}
+
+
+.nav-itens[disabled]{
+    color: white;
+    cursor: default;
+    font-size: 1.65rem;
+}
+
+/* ----- ANIMATIONS | SELECTORS ----- */
+
+.menu[data-animation="menu-animation"]{
+    animation: menu-animation 0.6s ease forwards;
+}
+
+/* ----- ANIMATIONS | KEYFRAMES ----- */
+
+@keyframes menu-animation {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media (min-width: 1024px) {
+    .menu ul{
+        gap: 3rem;
+    }
+}
+
+@media (min-width: 1180px) {
+    .menu{
+        padding: 1rem 4rem;
+    }
+    
+    .menu ul{
+        gap: 3.5rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .menu{
+        padding: 1.5rem 4rem;
+    }
+}
+
+
+/* ------------- HOME MENU ------------- */
+
+.links{
+    position: relative;
+}
+
+.links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.links li{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.links .links-itens{
+    color: var(--dark-purple);
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: var(--font-alternative);
+    background: var(--medium-green);
+    padding: 10px 45px;
+    border-radius: 60px;
+    transition: ease-out 0.5s;
+}
+
+.links .links-itens:hover{
+    box-shadow: inset 400px 0 20px 20px var(--light-purple);
+    color: white;
+}
