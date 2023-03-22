@@ -1,26 +1,20 @@
-@import '../../styles/fonts/fonts.css';
-
 .wrapper-home{
     position: relative;
+    height: 100lvh;
     display: grid;
     justify-content: center;
-    grid-template-rows: 1fr auto;
-    overflow-y: hidden;
-    margin-top: 20vh;
-    gap: 100px;
-}
-
-.links{
-    display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 30px;
+    overflow-y: hidden;
 }
 
-a{
-    color: var(--light-purple);
-    font-size: 3rem;
-    text-decoration: none;
-    font-family: var(--font-main);
+.circle-menu-home{
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    gap: 10%;
 }

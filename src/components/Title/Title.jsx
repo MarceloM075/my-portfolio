@@ -1,19 +1,18 @@
 import React from "react"
-import COLORS from "../../styles/colors/colors"
-import '../Title/styles.css'
+import './styles.css'
 
 function Title(props){
     const styles = {
-        fontSize: props.fontSize,
-        color: `var(${ COLORS.darkPurple })`,
-        fontWeight: `${ props.fontWeight }`
+        fontSize: props.fontSize ? props.fontSize : '2rem',
+        color: `var(${ props.color })`,
+        fontWeight: `${ props.fontWeight ? props.fontWeight : '500'}`
     }
 
     return (
         <>
-            <h1 className="title-home" style={ styles }>
-                { props.text }
-            </h1>
+            <props.tag className="title-home" style={ styles }>
+                { props.children }
+            </props.tag>
         </>
     )
 }

@@ -1,5 +1,4 @@
-@import '../../styles/fonts/fonts.css';
-
 .title-home{
     font-family: var(--font-main);
+    font-style: italic;
 }

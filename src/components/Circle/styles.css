@@ -1,6 +1,3 @@
-@import '../../styles/colors/styles.css';
-
-
 .circle{
     aspect-ratio: 1 / 1;
     border-radius: 50%;
@@ -10,6 +7,8 @@
     align-items: center;
     justify-content: center;
 }
+
+/* ----- PURPLE-LINES ----- */
 
 .circle[data-orientation="vertical"]::before{
     content: '';
@@ -54,7 +53,8 @@
 }
 
 
-/* ANIMAÇÕES | SELECTORS */
+/* ANIMATIONS | SELECTORS */
+
 .circle[data-orientation="vertical"][data-animation="increaseVertical-clockwise"]::before{
     animation: 
                 increase-width25to200 8s linear infinite, 
@@ -83,7 +83,7 @@
     animation: breath 1s linear infinite;
 }
 
-/* ANIMAÇÕES | KEYFRAMES */
+/* ANIMATIONS | KEYFRAMES */
 
 @keyframes rotate-clockwise{
     0%{
