@@ -21,7 +21,7 @@ function Links(props){
                         <a className={ props.isHome ? 'links-itens' : 'nav-itens' } href="/">Projects</a>
                     </li>
                     <li>
-                        <a className={ props.isHome ? 'links-itens' : 'nav-itens' } href="/" disabled>Skills</a>
+                        <a className={ props.isHome ? 'links-itens' : 'nav-itens' } href="./skills" disabled>Skills</a>
                     </li>
                     <li>
                         <a className={ props.isHome ? 'links-itens' : 'nav-itens' } href="/">About Me</a>
