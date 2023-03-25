@@ -15,7 +15,7 @@ function Links(props){
     return(
         <>
             <nav className={ props.isHome ? 'links' : 'menu' } data-animation={ props.isHome ? '' : 'menu-animation' }>
-                {isHome()}
+                { isHome() }
                 <ul>
                     <li>
                         <a className={ props.isHome ? 'links-itens' : 'nav-itens' } href="/">Projects</a>

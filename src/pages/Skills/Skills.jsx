@@ -30,7 +30,7 @@ function Skills(){
 
     return(
         <> 
-            <Links />
+            {/* <Links /> */}
             <Title 
                 tag={'h1'}
                 fontSize={'4rem'}
