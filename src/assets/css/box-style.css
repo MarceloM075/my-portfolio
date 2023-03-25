@@ -1,0 +1,7 @@
+.box-style{
+    background-color: var(--dark-purple);
+    border-radius: 3px;
+    border: 2px solid whitesmoke;
+    box-shadow: 0 0 8px black,
+                inset 0 0 5px white;
+}

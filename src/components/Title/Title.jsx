@@ -8,9 +8,11 @@ function Title(props){
         fontWeight: `${ props.fontWeight ? props.fontWeight : '500'}`
     }
 
+    const classes = props.className + ' title'
+
     return (
         <>
-            <props.tag className="title-home" style={ styles }>
+            <props.tag className={classes} style={ styles } data-animation={props['data-animation'] ? props['data-animation'] : ''}>
                 { props.children }
             </props.tag>
         </>
