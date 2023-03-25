@@ -1,11 +1,32 @@
 import './App.css';
-import Home from './pages/Home/Home';
+import { BrowserRouter } from 'react-router-dom';
+import MyRoutes from './config/MyRoutes';
+import Links from './components/Links/Links';
 
 function App() {
+
+  function showNavBar(){
+    const url = window.location.pathname
+    if(url === ''){
+      return 
+    }
+    else if(url !== '/'){
+      return (
+        <Links />
+      )
+    }
+
+  }
+
   return (
-    <div className="App">
-        <Home />
-    </div>
+    <>
+      {showNavBar()}
+      <BrowserRouter>
+        <div className="App">
+            <MyRoutes />
+        </div>
+      </BrowserRouter>
+    </>
   );
 }
 
