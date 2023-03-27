@@ -1,8 +1,7 @@
 import React from "react"
 import './styles.css'
 
-function Cards(props){
-
+function Box(props){
     const classes = props.className + ' cards'
 
     return(
@@ -16,4 +15,4 @@ function Cards(props){
     )
 }
 
-export default Cards
+export default Box

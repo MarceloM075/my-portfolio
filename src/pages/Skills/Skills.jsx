@@ -1,6 +1,6 @@
 import React from "react"
 import Card from "../../components/Card/Card"
-import Cards from "../../components/Cards/Cards"
+import Box from "../../components/Box/Box"
 import Title from "../../components/Title/Title"
 import COLORS from "../../assets/js/colors"
 import SKILLS from "../../assets/js/skills"
@@ -14,6 +14,7 @@ const cardAtrr = {
      'fontWeight': '800',
      'color': COLORS.darkPurple,
      'backgroundColor': COLORS.lightPurple,
+     'key': '',
      'skill': '',
      'src': ''
 }
@@ -23,6 +24,7 @@ function skillsCards(){
 
    for(let key in SKILLS){
       const temp = cardAtrr
+      temp.key = `${key}`
       temp.skill = `${key}` 
       temp.src = `${SKILLS[key]}`
       arr.push(<Card {...temp} />)
@@ -44,9 +46,9 @@ function Skills(){
             >
                 SKILLS
             </Title>
-            <Cards className='box-style' data-animation='cards-animation'>
+            <Box className='box-style' data-animation='cards-animation'>
                   {skillsCards()}
-            </Cards>
+            </Box>
         </>
     )
 }
