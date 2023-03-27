@@ -55,10 +55,8 @@ function Home(){
             </Circles>
 
             <div className="wrapper-home">
-                <Circle 
+                <div
                     className="circle-menu-home"
-                    size={ '70%, 490px' }
-                    color={ COLORS.transparent }
                 >
                     <Title 
                         fontSize={ '6.5rem' } 
@@ -69,7 +67,7 @@ function Home(){
                         HOME
                     </Title>
                     <Links isHome={ isHome } />
-                </Circle>
+                </div>
             </div>
         </>
     )
