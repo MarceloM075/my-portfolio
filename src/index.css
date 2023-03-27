@@ -1,38 +1,16 @@
 @import './assets/css/colors.css';
 @import './assets/css/fonts.css';
+@import './assets/css/background-icons.css';
 
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--light-green);
-  background-image: url('./assets/img/code-tech-dev-svgrepo-com (1).svg'),
-                    url('./assets/img/brackets-curly-svgrepo-com.svg'),
-                    url('./assets/img/code-svgrepo-com (2).svg'),
-                    url('./assets/img/code-tech-dev-svgrepo-com (2).svg'),
-                    url('./assets/img/code-svgrepo-com.svg');
-  background-repeat: no-repeat, no-repeat;
-  background-size: 500px, 200px, 300px, 120px, 500px;
-  background-position: -5vw 90vh, 80vw 10vh;
-  animation: background-moviment 3s ease-in-out infinite;
   overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-
-@keyframes background-moviment {
-  0%{
-    background-position: -5vw 60vh, 80vw 10vh, 12vw 15vh, 70vw 80vh, 70vw 30vh;
-  }
-  50%{
-    background-position: -5vw calc(60vh + 15px), 80vw calc(10vh + 80px), 12vw 15vh, 70vw 80vh, calc(70vw + 40px) calc(30vh - 10px);
-  }
-  100%{
-    background-position: -5vw 60vh, 80vw 10vh, 12vw 15vh, 70vw 80vh, 70vw 30vh;
-  }
-  
 }
