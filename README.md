@@ -5,7 +5,7 @@
 This is my portfolio's web site project.\
 Here is where I can show all my projects and information about me.
 
-## STATUS
+## Status
 
 Work In progress... \
 You can check how is the web site looking by clicking [here](https://marcelomalmeida.vercel.app).
