@@ -3,6 +3,10 @@
 This is my portfolio's web site project.\
 Here is where I can show all my projects and information about me.
 
+## STATUS
+
+Work In progress... \
+You can check how is the web site looking by clicking [here](https://marcelomalmeida.vercel.app).
 
 ## Languages and Tools used
 
@@ -16,4 +20,4 @@ You can check the project's license [here](https://github.com/MarceloM075/my-por
 
 <hr>
 
-Developed by Marcelo Marques Almeida.
+<p align='center'>Developed by Marcelo Marques Almeida.</p>
