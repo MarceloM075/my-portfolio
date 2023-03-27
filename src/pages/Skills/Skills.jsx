@@ -46,7 +46,7 @@ function Skills(){
             >
                 SKILLS
             </Title>
-            <Box className='box-style' data-animation='cards-animation'>
+            <Box data-animation='box-animation'>
                   {skillsCards()}
             </Box>
         </>

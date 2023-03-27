@@ -10,7 +10,15 @@
     gap: 30px;
 }
 
-.wrapper-cards{
+.box{
+    background-color: var(--dark-purple);
+    border-radius: 3px;
+    border: 2px solid whitesmoke;
+    box-shadow: 0 0 8px black,
+                inset 0 0 5px white;
+}
+
+.wrapper-box{
     background-color: transparent;
     display: flex;
     align-content: center;
@@ -20,11 +28,11 @@
     margin: 40px;
 }
 
-.wrapper-cards[data-animation='cards-animation']{
-    animation: cards-animation 1.1s ease forwards;
+.box[data-animation='box-animation']{
+    animation: box-animation 1.1s ease forwards;
 }
 
-@keyframes cards-animation {
+@keyframes box-animation {
     0%{
         opacity: 0;
         transform: translate(+300px);
