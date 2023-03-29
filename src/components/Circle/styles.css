@@ -34,6 +34,7 @@
     background-color: var(--light-green);
     inset: 2px;
     border-radius: 50%;
+    height: auto;
 }
 
 .circle[data-after="--dark-green"]::after{
@@ -42,6 +43,7 @@
     background-color: var(--dark-green);
     inset: 2px;
     border-radius: 50%;
+    height: auto;
 }
 
 .circle[data-after="--medium-green"]::after{
@@ -50,6 +52,7 @@
     background-color: var(--medium-green);
     inset: 2px;
     border-radius: 50%;
+    height: auto;
 }
 
 
