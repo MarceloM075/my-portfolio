@@ -6,8 +6,7 @@ import './styles.css'
 function Circle(props){
     const styles = {
         height: `max(${ props.size })`,
-        backgroundColor: `var(${ props.color })`,
-        borderRadius: '50%'
+        backgroundColor: `var(${ props.color })`
     }
 
     const classes = props.className + ' circle'

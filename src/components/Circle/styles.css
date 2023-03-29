@@ -1,11 +1,12 @@
 .circle{
     aspect-ratio: 1 / 1;
-    border-radius: 50% !important;
+    border-radius: 50%;
     position: absolute;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px solid red;
 }
 
 /* ----- PURPLE-LINES ----- */
