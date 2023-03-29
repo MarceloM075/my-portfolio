@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     overflow-y: hidden;
+    font-family: var(--font-alternative);
 }
 
 .circle-menu-home{
@@ -12,4 +13,122 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    color: var(--light-green);
+    font-weight: 600;
+
+}
+
+.circle-menu-home div{
+    padding: 0 25px;
+}
+
+.intro-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.intro-text p:first-child{
+    font-size: 3rem;
+    -webkit-text-stroke: 2px var(--dark-purple);
+}
+
+.intro-text p:nth-child(2n){
+    padding-top: 5px;
+    font-size: 1.2rem;
+    color: var(--dark-purple);
+}
+
+.intro-text p:first-child span{
+    font-size: 3rem;
+    color: var(--dark-purple);
+    -webkit-text-stroke: 0px;
+}
+
+.intro-text p span{
+    font-size: 1.8rem;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--dark-purple);
+}
+
+.intro-text p:last-child span{
+    text-shadow: 2px 2px 1px var(--light-purple);
+}
+
+.links-home-page{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.links-home-page a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--dark-purple);
+    text-transform: uppercase;
+    padding: .5rem 1rem;
+    position: relative;
+    transition: .3s;
+    justify-self: center;
+    min-width: 180px;
+}
+
+.links-home-page a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid var(--medium-green);
+    border-bottom: 2px solid var(--medium-green);
+    transform: scale(0.1, 1);
+    opacity: 0;
+    transition: .3s;
+}
+
+
+.links-home-page a:hover{
+    letter-spacing: 4px;
+    transition: .3s;
+}
+
+.links-home-page a:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.links-home-page a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+    background-color: var(--medium-green);
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.links-home-page a:hover::after{
+    opacity: 0;
+    transform: scale(0.1, 1);
+}
+
+@media (max-width: 600px) {
+    .links-home-page{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
 }

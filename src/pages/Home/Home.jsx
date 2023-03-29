@@ -55,18 +55,19 @@ function Home(){
             </Circles>
 
             <div className="wrapper-home">
-                <div
-                    className="circle-menu-home"
-                >
-                    <Title 
-                        fontSize={ '6.5rem' } 
-                        fontWeight={ '400' } 
-                        color={ COLORS.darkPurple }
-                        tag={ 'h1' }
-                    >   
-                        HOME
-                    </Title>
-                    <Links isHome={ isHome } />
+                <div className="circle-menu-home">
+                    <div className="intro-text">
+                        <p>
+                            HI, I'M <span>MARCELO</span>
+                        </p>
+                        <p>
+                            I'M A <span>FRONT-END WEB DEVELOPER</span> AND WELCOME TO MY PORTFOLIO'S WEB SITE
+                        </p>
+                    </div>
+                    <div className="links-home-page">
+                        <a href="/skills">Skills</a>
+                        <a href="/">About Me</a>
+                    </div>
                 </div>
             </div>
         </>
