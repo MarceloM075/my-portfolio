@@ -34,7 +34,7 @@
     background-color: var(--light-green);
     inset: 2px;
     border-radius: 50%;
-    height: auto;
+    height: max(90%, 600px);
 }
 
 .circle[data-after="--dark-green"]::after{
@@ -43,7 +43,7 @@
     background-color: var(--dark-green);
     inset: 2px;
     border-radius: 50%;
-    height: auto;
+    height: max(90%, 600px);
 }
 
 .circle[data-after="--medium-green"]::after{
@@ -52,7 +52,7 @@
     background-color: var(--medium-green);
     inset: 2px;
     border-radius: 50%;
-    height: auto;
+    height: max(90%, 600px);
 }
 
 
