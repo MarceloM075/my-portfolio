@@ -1,13 +1,12 @@
 /* ------------- not-HOME MENU ------------- */
 
 .menu{
-    background-color: var(--dark-purple);
+    background-color: transparent;
     padding: 1rem 2rem;
     font-family: var(--font-alternative);
     font-size: 1.2rem;
     display: grid;
     grid-template-columns: 1fr auto;
-    border-bottom: 3px solid whitesmoke;
 }
 
 .menu ul{
@@ -24,7 +23,7 @@
 }
 
 .nav-itens{
-    color: var(--medium-green);
+    color: var(--dark-purple);
     text-decoration: none;
     font-size: inherit;
     font-weight: 600;
@@ -32,7 +31,7 @@
 
 
 .nav-itens[disabled]{
-    color: white;
+    color: var(--light-purple);
     cursor: default;
     font-size: 1.65rem;
     pointer-events: none;

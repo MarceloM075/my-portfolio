@@ -4,7 +4,7 @@ import "./styles.css"
 function Card(props){
     const styles = {
         backgroundColor: `var(${props.backgroundColor})`,
-        color: `var(${props.color})`,
+        color: `white`,
         fontWeight: props.fontWeight,
         fontSize: props.fontSize
     }

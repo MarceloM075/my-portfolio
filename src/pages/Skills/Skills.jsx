@@ -44,7 +44,7 @@ function Skills(){
                 className={'title-skills'}
                 data-animation='title-animation'
             >
-                SKILLS
+                Skills
             </Title>
             <Box data-animation='box-animation'>
                   {skillsCards()}
