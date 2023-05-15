@@ -1,8 +1,6 @@
 import Circle from "../../components/Circle/Circle";
 import Circles from "../../components/Circles/Circles";
 import COLORS from "../../assets/js/colors";
-import Title from "../../components/Title/Title"
-import Nav from "../../components/Nav/Nav";
 import './styles.css'
 
 /*-- The data-orientation attr is to define the start orientation of the purple line that is around the circle. --*/
