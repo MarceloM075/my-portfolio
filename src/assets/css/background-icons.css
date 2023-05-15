@@ -11,7 +11,7 @@
     url('../img/code-svgrepo-com.svg'),
     url('../img/code-svgrepo-com (2).svg');
     background-repeat: no-repeat, no-repeat;
-    background-size: 500px, 200px, 300px, 120px, 500px, 360px, 300px, 300px, 100px, 250px, 500px;
+    background-size: 500px, 200px, 300px, 120px, 500px, 360px, 300px, 130px, 100px, 250px, 500px;
     background-position: 50%;
     animation: background-movement 3s ease-in-out infinite;
 }
@@ -22,7 +22,7 @@
       background-position: -5vw 60vh, 80vw 10vh, 12vw 15vh, 70vw 80vh, 70vw 30vh, 75vw 80vh, 83vw 65vh, 2vw 2vh, 3vw 40vh, 6vw 51vh, 86vw 10vh;
     }
     50%{
-      background-position: -5vw calc(60vh + 15px), 80vw calc(10vh + 80px), 12vw 15vh, 70vw 80vh, calc(70vw + 40px) calc(30vh - 10px), 75vw 80vh, 83vw 65vh, 2vw 2vh, 3vw 40vh, 8vw 49vh, 86vw 10vh;
+      background-position: -5vw calc(60vh + 15px), 80vw calc(10vh + 80px), 12vw 15vh, 70vw 80vh, calc(70vw + 40px) calc(30vh - 10px), 75vw 80vh, 83vw 65vh, 3vw 3vh, 3vw 40vh, 8vw 49vh, 86vw 10vh;
     }
     100%{
       background-position: -5vw 60vh, 80vw 10vh, 12vw 15vh, 70vw 80vh, 70vw 30vh, 75vw 80vh, 83vw 65vh, 2vw 2vh, 3vw 40vh, 6vw 51vh, 86vw 10vh;
