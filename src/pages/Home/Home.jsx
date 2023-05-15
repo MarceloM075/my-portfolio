@@ -2,7 +2,7 @@ import Circle from "../../components/Circle/Circle";
 import Circles from "../../components/Circles/Circles";
 import COLORS from "../../assets/js/colors";
 import Title from "../../components/Title/Title"
-import Links from "../../components/Links/Links";
+import Nav from "../../components/Nav/Nav";
 import './styles.css'
 
 /*-- The data-orientation attr is to define the start orientation of the purple line that is around the circle. --*/
@@ -10,8 +10,8 @@ import './styles.css'
 /*-- The data-animation attr is to define the animation of the circle or the animation of the ::before pseuso-element. --*/
 /*-- The isHome const is to define what menu links (Links component) we are going to use. --*/
 
+
 function Home(){
-    const isHome = true
 
     return(
         <> 
