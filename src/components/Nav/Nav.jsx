@@ -1,21 +1,12 @@
 import React from "react"
 import './styles.css'
 
-function Links(props){
-    function isHome(){
-        if(!props.isHome){
-            return(
-                <ul>
-                    LOGO
-                </ul>
-            )
-        }
-    }
-
+function Nav(props){
+    
     return(
         <>
             <nav className={ props.isHome ? 'links' : 'menu' } data-animation={ props.isHome ? '' : 'menu-animation' }>
-                { isHome() }
+                <p>LOGO</p>
                 <ul>
                     <li>
                         <a className={ props.isHome ? 'links-itens' : 'nav-itens' } href="/">Projects</a>
@@ -32,4 +23,4 @@ function Links(props){
     )
 }
 
-export default Links
+export default Nav

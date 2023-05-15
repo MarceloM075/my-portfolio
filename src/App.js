@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 import MyRoutes from './config/MyRoutes';
-import Links from './components/Links/Links';
+import Nav from './components/Nav/Nav';
 
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
     }
     else if(url !== '/'){
       return (
-        <Links />
+        <Nav />
       )
     }
 

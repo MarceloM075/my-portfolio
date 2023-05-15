@@ -6,16 +6,8 @@
     align-items: center;
     margin: auto;
     margin-top: 25px;
-    padding: 50px 30px;
+    padding: 25px 30px;
     gap: 30px;
-}
-
-.box{
-    background-color: var(--dark-purple);
-    border-radius: 3px;
-    border: 2px solid whitesmoke;
-    box-shadow: 0 0 8px black,
-                inset 0 0 5px white;
 }
 
 .wrapper-box{
@@ -25,12 +17,15 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin: 40px;
+    margin: auto;
+    max-width: 1170px;
+    width: 80%;
 }
 
 .box[data-animation='box-animation']{
     animation: box-animation 1.1s ease forwards;
 }
+
 
 @keyframes box-animation {
     0%{
