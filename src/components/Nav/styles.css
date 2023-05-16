@@ -7,6 +7,8 @@
     font-size: 1.2rem;
     display: grid;
     grid-template-columns: 1fr auto;
+    min-height: 65px;
+    height: 65px;
 }
 
 .menu ul{
@@ -29,9 +31,12 @@
     font-weight: 600;
 }
 
+.nav-itens:hover{
+    color: white;
+}
 
 .nav-itens[disabled]{
-    color: var(--light-purple);
+    color: white;
     cursor: default;
     font-size: 1.65rem;
     pointer-events: none;
@@ -78,39 +83,4 @@
     .menu{
         padding: 1.5rem 4rem;
     }
-}
-
-
-/* ------------- HOME MENU ------------- */
-
-.links{
-    position: relative;
-}
-
-.links ul{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.links li{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-.links .links-itens{
-    color: var(--dark-purple);
-    font-size: 2rem;
-    text-decoration: none;
-    font-family: var(--font-alternative);
-    background: var(--medium-green);
-    padding: 10px 45px;
-    border-radius: 60px;
-    transition: ease-out 0.5s;
-}
-
-.links .links-itens:hover{
-    box-shadow: inset 400px 0 20px 20px var(--light-purple);
-    color: white;
 }

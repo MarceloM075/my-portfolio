@@ -63,7 +63,7 @@ function Home(){
                         </p>
                     </div>
                     <div className="links-home-page">
-                        <a href="/skills">Skills</a>
+                        <a href="/projects">Projects</a>
                         <a href="/">About Me</a>
                     </div>
                 </div>

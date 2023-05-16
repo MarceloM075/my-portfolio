@@ -9,6 +9,9 @@
     width: 80%;
     max-width: 1170px;
     margin: auto;
+    background-color: #C1E04F99;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .title[data-animation='title-animation']{

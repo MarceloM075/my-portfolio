@@ -4,7 +4,8 @@ const COLORS = {
     darkGreen: '--dark-green',
     lightPurple: '--light-purple',
     darkPurple: '--dark-purple',
-    transparent: '--transparent'
+    transparent: '--transparent',
+    white: '--white'
 }
 
 export default COLORS

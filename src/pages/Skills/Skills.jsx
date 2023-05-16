@@ -40,13 +40,13 @@ function Skills(){
                 tag={'h1'}
                 fontSize={'4rem'}
                 fontWeight={'600'}
-                color={ COLORS.darkPurple }
+                color={ COLORS.white }
                 className={'title-skills'}
                 data-animation='title-animation'
             >
                 Skills
             </Title>
-            <Box data-animation='box-animation'>
+            <Box className={'cards'} data-animation='box-animation'>
                   {skillsCards()}
             </Box>
         </>

@@ -1,0 +1,100 @@
+.title-projects{
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+.projects-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+}
+
+.projects-box ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.projects-box ul li{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-family: var(--font-alternative);
+    margin-left: 15px;
+    min-height: 3rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: left;
+    border-bottom: 2px solid #80379c;
+    width: calc(100% - 15px);
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #C1E04F99;
+    transition: 0.3s;
+    position: relative;
+}
+
+.projects-box ul li label{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #7a00c0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: left;
+    cursor: pointer;
+}
+
+.projects-box ul li:hover{
+    letter-spacing: 3px;
+    transition: 0.15s;
+    padding-left: 20px;
+}
+
+.projects-box ul li:hover label{
+    color: white;
+}
+
+.projects-box ul li:has(input:checked){
+    letter-spacing: 3px;
+    transition: 0.15s;
+    padding-left: 20px;
+}
+
+.projects-box ul li:has(input:checked) label{
+    color: white;
+}
+ 
+.projects-box img{
+    width: 100%;
+    min-height: 250px;
+    border-radius: 5px; 
+    object-fit: fill;
+    display: none;
+}
+
+.projects-itens{
+   display: none;
+}
+
+.projects-box label span{
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .projects-box{
+        grid-template-columns: 0 1fr;
+    }
+
+    .projects-box ul li{
+        margin-left: 0;
+        width: 95%;
+    }
+    .projects-box ul{
+        align-items: center;
+    }
+}
